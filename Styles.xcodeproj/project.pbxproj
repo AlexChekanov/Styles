@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B982F2D205DA23F009A0D0A /* ShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B982F2C205DA23F009A0D0A /* ShadowStyle.swift */; };
 		3BA43495205AFD1E0039A631 /* Styles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA4348B205AFD1E0039A631 /* Styles.framework */; };
 		3BA4349A205AFD1E0039A631 /* StylesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA43499205AFD1E0039A631 /* StylesTests.swift */; };
-		3BA4349C205AFD1E0039A631 /* Styles.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA4348E205AFD1E0039A631 /* Styles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BA434A6205AFD5B0039A631 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA434A5205AFD5B0039A631 /* TextStyle.swift */; };
+		3BF6C50F205F1BB200DB19AE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6C50E205F1BB200DB19AE /* Colors.xcassets */; };
+		3BF6C511205F1BD200DB19AE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6C510205F1BD200DB19AE /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B982F2C205DA23F009A0D0A /* ShadowStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowStyle.swift; sourceTree = "<group>"; };
 		3BA4348B205AFD1E0039A631 /* Styles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Styles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BA4348E205AFD1E0039A631 /* Styles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Styles.h; sourceTree = "<group>"; };
 		3BA4348F205AFD1E0039A631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA43494205AFD1E0039A631 /* StylesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StylesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA43499205AFD1E0039A631 /* StylesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylesTests.swift; sourceTree = "<group>"; };
 		3BA4349B205AFD1E0039A631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA434A5205AFD5B0039A631 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		3BF6C50E205F1BB200DB19AE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		3BF6C510205F1BD200DB19AE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B982F2E205DA261009A0D0A /* Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				3B982F2C205DA23F009A0D0A /* ShadowStyle.swift */,
+			);
+			path = Shadow;
+			sourceTree = "<group>";
+		};
 		3BA43481205AFD1E0039A631 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +85,11 @@
 		3BA4348D205AFD1E0039A631 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				3BA4348E205AFD1E0039A631 /* Styles.h */,
 				3BA4348F205AFD1E0039A631 /* Info.plist */,
+				3BF6C50E205F1BB200DB19AE /* Colors.xcassets */,
+				3BF6C512205F1BF900DB19AE /* Colors */,
+				3B982F2E205DA261009A0D0A /* Shadow */,
+				3BA434A7205AFE640039A631 /* Text */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -86,6 +103,22 @@
 			path = StylesTests;
 			sourceTree = "<group>";
 		};
+		3BA434A7205AFE640039A631 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				3BA434A5205AFD5B0039A631 /* TextStyle.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		3BF6C512205F1BF900DB19AE /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6C510205F1BD200DB19AE /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +126,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA4349C205AFD1E0039A631 /* Styles.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +180,7 @@
 				TargetAttributes = {
 					3BA4348A205AFD1E0039A631 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					3BA43493205AFD1E0039A631 = {
@@ -179,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF6C50F205F1BB200DB19AE /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B982F2D205DA23F009A0D0A /* ShadowStyle.swift in Sources */,
+				3BF6C511205F1BD200DB19AE /* Colors.swift in Sources */,
+				3BA434A6205AFD5B0039A631 /* TextStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +371,7 @@
 		3BA434A0205AFD1E0039A631 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -343,10 +381,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Styles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tipsandtricks.Styles;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +395,7 @@
 		3BA434A1205AFD1E0039A631 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -364,6 +405,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Styles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tipsandtricks.Styles;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -376,6 +418,7 @@
 		3BA434A3205AFD1E0039A631 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JH6R8SSABL;
 				INFOPLIST_FILE = StylesTests/Info.plist;
@@ -390,6 +433,7 @@
 		3BA434A4205AFD1E0039A631 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JH6R8SSABL;
 				INFOPLIST_FILE = StylesTests/Info.plist;
